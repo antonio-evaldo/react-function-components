@@ -1,3 +1,10 @@
+# react-function-components
+
+## Módulo 1
+
+- Como criar um `Function Component` e quais suas diferenças para os `Class Components`
+- Material UI
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
