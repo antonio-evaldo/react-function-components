@@ -5,6 +5,17 @@
 - Como criar um `Function Component` e quais suas diferenças para os `Class Components`
 - Material UI
 
+## Módulo 2
+
+- Explorando o Material UI
+- `FormControlLabel`, `Box`, `TextField`, `Switch`
+
+## Módulo 3
+
+- Formulários controlados e não controlados
+- useState
+- Assincronicidade da função de atribuição do estado
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,11 +1,24 @@
 import { Switch, Button, TextField, FormControlLabel } from "@mui/material";
 import { Box } from "@mui/system";
+import { useState } from "react";
 
 function FormularioCadastro() {
+  const [nome, setNome] = useState("");
+  const [sobrenome, setSobrenome] = useState("");
 
   return (
-    <form>
+    <form
+      onSubmit={(event) => {
+        event.preventDefault();
+        console.log(nome, sobrenome);
+      }}
+    >
       <TextField
+        value={nome}
+        onChange={e => {
+          const novoNome = e.target.value.substr(0, 3);          
+          setNome(novoNome);
+        }}
         id="nome"
         label="Nome"
         variant="outlined"
@@ -14,6 +27,8 @@ function FormularioCadastro() {
       />
 
       <TextField
+        value={sobrenome}
+        onChange={e => { setSobrenome(e.target.value) }}
         id="sobrenome"
         label="Sobrenome"
         variant="outlined"
