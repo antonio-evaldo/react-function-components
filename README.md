@@ -16,6 +16,17 @@
 - useState
 - Assincronicidade da função de atribuição do estado
 
+## Módulo 4
+
+- Regras de utilização dos Hooks
+  1. Devemos utilizar hooks apenas no nível superior
+  2. Devemos utilizar hooks apenas dentro de funções do React
+
+- Propriedade `checked` para Switchs
+- Recebendo `props` em um componente de função
+
+Em vez de receber pelo `this.props` como na abordagem de classes, recebemos pelo parâmetro da função de componente. Mas sem o typescript, ainda não conseguimos acessar as propriedades de forma dinâmica.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
