@@ -23,9 +23,17 @@
   2. Devemos utilizar hooks apenas dentro de funções do React
 
 - Propriedade `checked` para Switchs
-- Recebendo `props` em um componente de função
+- Recebendo `props` em um componente de função e Injeção de dependências
 
 Em vez de receber pelo `this.props` como na abordagem de classes, recebemos pelo parâmetro da função de componente. Mas sem o typescript, ainda não conseguimos acessar as propriedades de forma dinâmica.
+
+Sobre a injeção de dependências, nesse caso foi basicamente passar a função `aoEnviarForm` na propriedade `aoEnviar` para o componente `FormularioCadastro`. Com isso, tornamos o componentes `FormularioCadastro` mais **reutilizável**, pois agora quem estiver **chamando** o formulário irá decidir o que fazer quando ele for submetido, ou seja, atribuir uma função personalizada para a propriedade `aoEnviar`. De todo modo, seria necessário fazer isso para utilizar as informações do formulário no componente pai, que é o `App.js`.
+
+## Módulo 5
+
+- Propriedades `error` e `helperText` do `TextField` do MaterialUI
+- Usando estado para controlar a exibição de erros
+- Recebendo validação de maneira externa
 
 # Getting Started with Create React App
 

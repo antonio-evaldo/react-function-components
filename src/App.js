@@ -14,13 +14,24 @@ function App() {
       <Typography variant="h3" component="h1" align="center" marginTop={3}>
         Formulário de Cadastro
       </Typography>
-      <FormularioCadastro aoEnviar={aoEnviarForm} />
+      <FormularioCadastro
+        aoEnviar={aoEnviarForm}
+        validarCPF={validarCPF}
+      />
     </Container>
   );
 }
 
 function aoEnviarForm(dados) {
   console.log(dados);
+}
+
+function validarCPF(cpf) {
+  if (cpf.length !== 11) {
+    return { valido: false, texto: "CPF deve ter 11 dígitos." };
+  }
+
+  return { valido: true, texto: "" };
 }
 
 export default App;
